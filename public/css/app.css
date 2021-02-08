@@ -1,0 +1,59 @@
+body {
+    background-image: url('/img/bg2.png');
+    background-attachment: fixed;
+    background-size: cover;
+    opacity:0.8;
+  }
+  .navbar{
+      background-color:black;
+  }
+  nav .navbar-nav li a{
+      color:rgb(245, 243, 243) !important;
+      }
+    
+  
+  nav .navbar-nav li a:hover{
+      color:rgb(251, 255, 0) !important;
+      border-bottom: 2px solid rgb(0, 255, 128);
+      font-size: 20px;
+  }
+  #fgps{
+      color:rgb(250, 249, 250);
+  } 
+  .welcome{
+      margin-top:30px;
+      font-size: 40px;
+  }
+  .register
+  {
+    padding-bottom: 20px;
+    padding-left: 40px;
+ }
+.register table{
+    margin-bottom: 40px;
+    margin-top: 70px;
+    border-radius: 3px;
+    border-width: 3px;
+    box-shadow: 5px 5px 5px 5px;
+    background-color: white;
+
+    
+    
+    
+    }
+    .register td{
+    padding-top: 20px;
+    padding-left:10px;
+    padding-right: 10px;
+    }
+    .register button{
+    size: 10px;
+    color:white;
+    background-color: rgb(22, 34, 37);
+    margin-left:190px;
+    }
+    .heading{
+        font-size: 30px;
+        text-align: center;
+        font-family:sans-serif;
+    }

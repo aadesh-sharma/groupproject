@@ -22,7 +22,7 @@ class HomeController extends AbstractController
         ]);
     }
     /**
-     * @Route("/pubished", name="published_products")
+     * @Route("/published", name="published_products")
      */
     public function show(ProductRepository $productRepository,CategoryRepository $categoryRepository): Response
     {

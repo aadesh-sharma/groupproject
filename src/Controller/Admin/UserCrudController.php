@@ -16,6 +16,7 @@ use EasyCorp\Bundle\EasyAdminBundle\Field\EmailField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\IdField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\TelephoneField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\TextField;
+use EasyCorp\Bundle\EasyAdminBundle\Config\Filters;
 
 
 class UserCrudController extends AbstractCrudController
@@ -37,6 +38,18 @@ class UserCrudController extends AbstractCrudController
 
 
 
+    }
+    public function configureFilters(Filters $filters):Filters
+    {
+        return $filters
+        ->add('email');
+    }
+
+    public function configureCrud( Crud $crud): Crud{
+        return $crud->setEntityPermission('ROLE_ADMIN')
+        ->setSearchFields(['email','id',])
+        ->setDefaultSort(['email'=>'ASC'])
+        ->setPaginatorPageSize(3);
     }
     
 }

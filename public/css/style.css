@@ -1,0 +1,29 @@
+
+body {
+  background-image: url('/img/b11.jpeg');
+  opacity:0.9;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.navbar{
+    background-color:black;
+}
+nav .navbar-nav li a{
+    color:rgb(226, 215, 215) !important;
+    }
+  
+
+nav .navbar-nav li a:hover{
+    color:blue !important;
+    border-bottom: 2px solid blue;
+    font-size: 20px;
+}
+#fgps{
+    color:red;
+} 
+.welcome{
+    margin-top:30px;
+    font-size: 100px;
+    font-family: Tahoma;
+
+}

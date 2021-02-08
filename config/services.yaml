@@ -10,6 +10,9 @@ parameters:
                 url_prefix: '/uploads/products'
                 url_path: '/public/uploads/products'
 services:
+    App\EventListener\KernelListener:
+        tags:
+            - { name: kernel.event_listener, event: kernel.exception }
     # default configuration for services in *this* file
     _defaults:
         autowire: true      # Automatically injects dependencies in your services.
